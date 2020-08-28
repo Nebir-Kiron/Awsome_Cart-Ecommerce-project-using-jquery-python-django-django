@@ -5,7 +5,6 @@ from django.http import HttpResponse
 
 def index(request):
     mypost = Blogpost.objects.all()
-    print(mypost)
     return render(request,'blog/index.html',{'mypost':mypost})
 
 

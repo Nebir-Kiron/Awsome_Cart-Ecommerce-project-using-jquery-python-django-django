@@ -167,7 +167,6 @@ function updateCart(cart) {
     }
     localStorage.setItem('cart', JSON.stringify(cart));
     document.getElementById('cart').innerHTML = sum;
-    console.log(cart);
     updatePopover(cart);
 }
 // If plus or minus button is clicked, change the cart as well as the display value
